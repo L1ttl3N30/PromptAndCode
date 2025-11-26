@@ -1,0 +1,51 @@
+You are my senior full-stack engineer. Generate a complete, production-ready codebase for a web application with the features and delivery requirements listed below. Do not summarize. Do not leave TODOs. Provide full working code, file-by-file.
+
+SCOPE (MVP):
+- MCQ test system (create tests/questions in admin, student test-taking UI, timer, auto-scoring, results page).
+- Literature long-answer test with AI grading (students submit; API grades via OpenAI using keyword+rubric matching; store score+feedback).
+- Payment system using Stripe: support one-time per-test purchases AND subscription (weekly or monthly). Successful payment unlocks access to purchased tests. Implement webhook handling to confirm purchases and update access.
+- User authentication: email + password sign-up/login/logout. Dashboard showing available tests and access control based on purchases.
+- Admin UI for creating tests/questions and viewing results.
+
+OUT OF SCOPE (for now): cheating detection, Zoom classes, advanced analytics, mobile app, advanced test modes.
+
+TECH STACK (use these exactly):
+- Next.js 14 (App Router) + TypeScript
+- Prisma ORM + PostgreSQL
+- NextAuth (email/password) with session cookies
+- Tailwind CSS for styling
+- Stripe for payments (checkout + webhooks)
+- OpenAI API for grading
+- Dockerfiles and docker-compose for local/postgres+app dev
+- Seed script to create admin user and sample tests
+
+DELIVERY REQUIREMENTS:
+1. Full folder structure with every file included.
+2. Print every file's code in separate, copy-paste ready sections (no placeholders).
+3. Database: Prisma schema, migration + seed script that creates an admin user and sample tests.
+4. Authentication: full signup/login/logout, middleware protecting routes/pages.
+5. Stripe: checkout sessions, webhook handler, models to track payments & access, subscription + one-time logic.
+6. MCQ engine: admin create UI, student test UI, timer, scoring, store results, results page.
+7. AI grading: API endpoint that sends answers to OpenAI, performs keyword/rubric matching (configurable weights), stores score+feedback, and shows result page.
+8. Frontend: Tailwind UI components, admin pages, student dashboard.
+9. .env.example with all variables (DATABASE_URL, NEXTAUTH_SECRET, STRIPE_SECRET, STRIPE_WEBHOOK_SECRET, OPENAI_KEY, etc.).
+10. Deployment instructions for both Vercel (recommended) and Docker (alternative).
+11. Provide scripts for migrations, seed, and start dev server.
+12. Ensure no missing imports, consistent types, and working logic.
+13. Include a README with exact setup steps and how to test webhooks locally (ngrok example).
+
+ASSUMPTIONS & SMALL RULES:
+- Use PostgreSQL as the DB.
+- Use SendGrid for emails; if a key is not provided, stub out sending with a console log but keep the integration code.
+- Admin account is created by seed script (email: admin@example.com, password: AdminPass123).
+- For OpenAI grading, implement a default rubric: 40% keywords, 30% structure/coherence, 30% style/grammar — make weights configurable.
+- Provide sample `.env.example`.
+- No TODOs or placeholders. Use env variables for secrets.
+
+If you accept these constraints, generate the full project. If you need to change a default (e.g., a different email provider), pick a sensible alternative and state it at the top of your output.
+
+IMPORTANT:
+Due to token limits, deliver the code FILE-BY-FILE across multiple responses.
+After finishing each response, stop naturally when the limits are reached.
+I will reply with "Continue" to get the remaining files.
+Do NOT skip any part of the code.
