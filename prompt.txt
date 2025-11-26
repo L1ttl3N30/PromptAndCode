@@ -1,0 +1,215 @@
+PROMPT START
+
+You are my senior full-stack engineer. I want you to generate a complete, production-ready codebase for a web application with these features:
+
+MVP FEATURES (SCOPE):
+
+MCQ test system
+
+Admin can create tests and questions
+
+Students can take tests
+
+Timer
+
+Auto-scoring
+
+Results page
+
+Literature long-answer test with AI grading
+
+Students submit long answers
+
+AI evaluates based on keyword matching + rubric
+
+Score + feedback stored in database
+
+Payment system
+
+Students can pay per test, weekly, or monthly
+
+Use Stripe
+
+Unlocks access after successful payment
+
+Webhook handling
+
+User authentication
+
+Email + password
+
+Login, logout, signup
+
+Dashboard showing available tests
+
+Access control based on purchases
+
+OUT OF SCOPE FOR NOW:
+
+Cheating detection
+
+Zoom classes
+
+Advanced admin analytics
+
+Teacher dashboards
+
+Mobile app
+
+Randomization or advanced test modes
+
+TECH STACK
+
+Use the following stack for the entire project:
+
+[PUT YOUR CHOSEN STACK HERE — example below]
+
+Example (if you want me to choose the best option for you):
+→ Use Next.js 14 (App Router) + TypeScript + Prisma + PostgreSQL + Stripe + NextAuth + TailwindCSS
+→ Use OpenAI API for AI grading
+
+(You can replace this with Laravel, Django, or anything else you want.)
+
+DELIVERY REQUIREMENTS
+
+Generate a complete, runnable project with:
+
+1. Full folder structure
+
+All directories and files
+
+Exactly how to organize the backend, frontend, and database
+
+2. All code, file-by-file
+
+Every file in the project
+
+No placeholders
+
+Real working logic
+
+Real schemas, routes, API handlers, pages, components
+
+3. Database
+
+Full schema
+
+Migration files
+
+Prisma schema (if applicable)
+
+Seed scripts
+
+4. Authentication
+
+Fully implemented
+
+Working signup, login, logout
+
+Session storage
+
+Middleware protecting pages
+
+5. Payment System (Stripe)
+
+Checkout sessions
+
+Webhooks
+
+Subscription OR one-time purchase logic
+
+Unlocking access to tests
+
+Models to track payments & access
+
+6. MCQ Test Engine
+
+Admin test creation UI
+
+Test-taking UI
+
+Timer
+
+Scoring logic
+
+Results storage
+
+Results page
+
+7. Literature AI Grading
+
+API endpoint that sends student answer → OpenAI
+
+Keyword/rubric matching logic
+
+Stores score + feedback
+
+Page to view AI-graded result
+
+8. Frontend UI
+
+Ready-to-use Tailwind CSS components
+
+Simple, clean dashboard
+
+Admin pages
+
+Student pages
+
+9. Environment Variables
+
+Provide a .env.example with all needed keys:
+
+Database URL
+
+Stripe keys
+
+OpenAI key
+
+NextAuth keys
+
+Server secrets
+
+10. Deployment Instructions
+
+Provide instructions for deployment on:
+
+Vercel (frontend + backend)
+OR
+
+Docker + server deployment
+(Choose whichever is best for the chosen stack)
+
+11. After generating all code
+
+Do the following:
+
+Provide a ZIP-style project structure overview
+
+Print every file's code in separate expandable sections
+
+Give me step-by-step setup instructions
+
+Provide scripts to run migrations, seed, and start the dev server
+
+Verify the entire codebase is internally consistent with no missing imports
+
+IMPORTANT RULES
+
+Do NOT summarize.
+
+Do NOT leave “TODO” comments.
+
+Provide full working code.
+
+If something requires secrets (Stripe, OpenAI), reference an env variable.
+
+If the app needs models, create them fully.
+
+If an API endpoint is required, implement it fully.
+
+If configuration is needed (like NextAuth or Prisma), include it in full.
+
+Assume you are delivering a production-ready, complete starting codebase.
+
+PROMPT END
