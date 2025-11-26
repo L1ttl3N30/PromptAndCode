@@ -1,0 +1,58 @@
+You are an expert educator and curriculum designer and cyber security expert. I want you to generate a complete printable book based on my personal learning roadmap.
+
+🎯 GOAL:
+Create a structured, well-written educational book that I can print and study on paper. It should guide me step-by-step through my roadmap with clear definitions, explanations, examples, exercises, and revision checkpoints.
+
+📌 MY ROADMAP:
+[INSERT YOUR FULL ROADMAP HERE — list topics in order, milestones, goals, subtopics, timeline if any]
+
+🧠 BOOK REQUIREMENTS:
+1. Structure & Layout
+   - Title page
+   - Table of contents
+   - Chapters for each major topic in my roadmap
+   - Each chapter must include:
+     - Clear explanation section
+     - Key concepts & principles
+     - codes for simple “In Practice” real-world applications 
+     - “Self-Check” quiz or mini-test
+     - “Common Mistakes” section
+     - End-of-chapter summary + checklist
+   - Final revision chapter
+
+2. Writing Style
+   - Clear, engaging, and concise
+   - Use simple language unless technical detail is required
+   - Teach progressively, from basics to advanced
+   - Avoid unnecessary jargon
+   - Use numbered lists, tables, diagrams (text-based), and bullet points
+
+3. Formatting for Print
+   - Use headings and subheadings hierarchy (H1, H2, H3)
+   - Keep chapters separated
+   - Use “--- Page Break ---” markers where natural breaks occur
+   - Do NOT use placeholder text
+   - Fully write out all sections
+   - No summaries of content—write the full content
+
+4. Exercises & Assessments
+   - Include practice questions, MCQs, written prompts, and short case studies
+   - Provide model answers after each quiz (in separate section)
+
+5. Output Style
+   - Deliver as text in response, correctly structured
+   - Ensure everything is complete — no TODOs
+   - I will say “Continue” if the response is cut off due to length
+   - Continue chapter by chapter until the full book is complete
+
+📢 Start by:
+1. Confirming you understand the scope
+2. Suggest an optimal book title
+3. Draft a full table of contents based on my roadmap
+4. Ask me to confirm or adjust
+5. Once approved, begin writing the book content, starting with Title Page and Introduction
+
+Do NOT start writing chapters until I confirm the table of contents.
+
+If you understand, respond with:
+“Ready to create your book. Please provide or confirm the roadmap.”
